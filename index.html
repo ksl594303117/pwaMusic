@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello PWA</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="src/assets/css/main.css">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -15,7 +15,7 @@
 // 检测浏览器是否支持sw
 console.log(navigator)
 if(navigator.serviceWorker !== null) {
-  navigator.serviceWorker.register('sw.js')
+  navigator.serviceWorker.register('src/js/sw.js')
     .then(registion => {
       console.log('支持sw：', registion.scope)
     })
