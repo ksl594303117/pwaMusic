@@ -15,7 +15,7 @@
 // 检测浏览器是否支持sw
 console.log(navigator)
 if(navigator.serviceWorker !== null) {
-  navigator.serviceWorker.register('/src/js/sw.js')
+  navigator.serviceWorker.register('sw.js')
     .then(registion => {
       console.log('支持sw：', registion.scope)
     })
