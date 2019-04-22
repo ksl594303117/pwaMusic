@@ -1,0 +1,13 @@
+{
+  "name": "Hello PWA",
+  "short_name": "应用名",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c",
+  "icon": [{
+    "src": "/icon.jpeg",
+    "sizes": "120x120",
+    "type": "image/png"
+  }]
+}
