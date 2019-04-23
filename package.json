@@ -2,7 +2,7 @@
   "name": "pwa_tem",
   "version": "1.0.0",
   "description": "a pwa project simulate CloudMusic",
-  "main": "index.js",
+  "main": "sw.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
