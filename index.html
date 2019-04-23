@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello </title>
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="/src/assets/css/main.css">
 </head>
 <body>
     <h3>Hello PWA</h3>
+    <image src='src/assets/img/icon.jpeg' />
 </body>
 <script>
 // 检测浏览器是否支持sw
-console.log('koushuling-navigator', navigator)
+console.log('navigator', navigator)
 if(navigator.serviceWorker !== null) {
   navigator.serviceWorker.register('sw.js')
     .then(registion => {
