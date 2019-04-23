@@ -13,7 +13,7 @@
 </body>
 <script>
 // 检测浏览器是否支持sw
-console.log(navigator)
+console.log('koushuling-navigator', navigator)
 if(navigator.serviceWorker !== null) {
   navigator.serviceWorker.register('sw.js')
     .then(registion => {
