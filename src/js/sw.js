@@ -1,12 +1,11 @@
 importScripts( 'https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js' )
-console.log( workbox )
 var cacheStorageKey = 'minimal-pwa-1'
 // 定义需要缓存的路径以及需要缓存的静态文件的列表
 var cacheList = [
   '/',
   'index.html',
-  'main.css',
-  'icon.jpeg'
+  'src/assets/css/main.css',
+  'src/assets/img/icon.jpeg'
 ]
 self.addEventListener( 'install', e => {
   e.waitUntil(
