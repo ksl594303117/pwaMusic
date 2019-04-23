@@ -24,6 +24,9 @@ self.addEventListener( 'fetch', e => {
         return response
       }
       return fetch( e.request.url )
+    } ).catch( err => {
+      console.error( 'Fetching failed:', err )
+      throw err
     } )
   )
 } )
