@@ -1,5 +1,5 @@
 {
-  "name": "Hello PWA",
+  "name": "Hello PWA完整的名称",
   "short_name": "应用名",
   "start_url": "/index.html",
   "display": "standalone",
