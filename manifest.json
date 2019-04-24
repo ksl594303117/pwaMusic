@@ -1,15 +1,15 @@
 {
-  "short_name": "应用名",
+  "start_url": "index.html",
+  "short_name": "PWA Music",
   "name": "A PWA Project",
   "display": "standalone",
   "background_color": "#fff",
   "theme_color": "#3eaf7c",
   "icons": [
     {
-      "src": "/src/assets/img/icon.jpeg",
+      "src": "/src/assets/img/icon.png",
       "sizes": "120x120",
       "type": "image/png"
     }
-  ],
-  "start_url": "index.html"
+  ]
 }

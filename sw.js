@@ -6,7 +6,7 @@ var cacheList = [
   'index.html',
   'manifest.json',
   'src/assets/css/main.css',
-  'src/assets/img/icon.jpeg'
+  'src/assets/img/icon.png'
 ]
 self.addEventListener( 'install', e => {
   e.waitUntil(
