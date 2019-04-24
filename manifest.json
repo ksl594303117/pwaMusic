@@ -1,5 +1,5 @@
 {
-  "start_url": "index.html",
+  "start_url": "/index.html",
   "short_name": "PWA Music",
   "name": "A PWA Project",
   "display": "standalone",
