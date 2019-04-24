@@ -1,5 +1,5 @@
 {
-  "name": "pwa_tem",
+  "name": "ksl594303117.github.io",
   "version": "1.0.0",
   "description": "a pwa project simulate CloudMusic",
   "main": "sw.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ksl594303117/pwa_tem.git"
+    "url": "git+https://github.com/ksl594303117/ksl594303117.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ksl594303117/pwa_tem/issues"
+    "url": "https://github.com/ksl594303117/ksl594303117.github.io/issues"
   },
-  "homepage": "https://github.com/ksl594303117/pwa_tem#readme"
+  "homepage": "https://github.com/ksl594303117/ksl594303117.github.io#readme"
 }
