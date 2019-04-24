@@ -3,8 +3,8 @@
   "short_name": "PWA Music",
   "name": "A PWA Project",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#3eaf7c",
+  "background_color": "",
+  "theme_color": "#F3E7EA",
   "icons": [
     {
       "src": "/src/assets/img/icon.png",

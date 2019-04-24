@@ -19,9 +19,16 @@
 // 检测浏览器是否支持sw
 console.log('navigator', navigator)
 if(navigator.serviceWorker !== null) {
+  // 1.支持sw，可以进行注册缓存文件了
+  // 2.一般在onLoad时间中注册sw即可（减少性能损耗） 
+  // 3.sw是有作用域的，如果将注册路由改成'/test/sw.js'，sw之后只会监听 /test 下的所有fetch请求，
+  //   而不会去监听其他路径下的请求。
   navigator.serviceWorker.register('sw.js')
     .then(registion => {
       console.log('支持sw：', registion.scope)
+    })
+    .catch(err => {
+      console.log('注册sw失败：', err)
     })
 }
 </script>
