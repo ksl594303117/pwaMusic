@@ -45,7 +45,6 @@ self.addEventListener( 'fetch', e => {
   e.respondWith(
     // caches：用来控制缓存专门分离出来的一个对象
     caches.match( e.request ).then( response => {
-      console.error( 'response', response )
       if ( response ) {
         return response
       }
