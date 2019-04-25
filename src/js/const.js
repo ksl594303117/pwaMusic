@@ -1,4 +1,5 @@
 export const music_urls = [{
-  name: '123456',
-  url: 'https://m10.music.126.net/20190422172921/ce61429ba9d1e23be06d57d791a24233/ymusic/545b/0358/535c/c1677defab429fe5b53dd66b09ee8a4d.mp3'
+  name: '我一定会爱上你',
+  author: '谢',
+  url: 'https://m701.music.126.net/20190425170510/489164c28d0ef2ba87f6b48b245773e4/jdyyaac/555c/0559/5658/b609f00a8c232b10d8eea2ee3bdc7bc1.m4a'
 }]
