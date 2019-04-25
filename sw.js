@@ -52,7 +52,7 @@ self.addEventListener( 'fetch', e => {
       }
       // fetch：现代浏览器用来替代XMLHttpRequest专门开发出的ajax请求。
       // 因为event.request 流已经在caches.match中使用过一次，所以不能再次使用，故得到副本再使用。
-      var fetchRequest = event.request.clone()
+      var fetchRequest = e.request.clone()
       return fetch( fetchRequest ).then( res => {
         // 失败-直接返回res
         if ( !res || res.status !== 200 || res.type !== 'basic' ) {
@@ -63,7 +63,7 @@ self.addEventListener( 'fetch', e => {
         var resToCache = res.clone()
         caches.open( cacheStorageKey )
           .then( cache => {
-            cache.put( event.request, resToCache )
+            cache.put( e.request, resToCache )
           } )
         return res
       } )
