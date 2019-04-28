@@ -1,46 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello PWA</title>
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="/src/assets/css/main.css">
-</head>
-<body>
-    <h3>Hello World</h3>
-    <p>一只白色的百灵鸟</p>
-    <p>翅膀上有风铃在摇晃</p>
-    <audio 
-      controls="controls"
-      src="https://m701.music.126.net/20190425170510/489164c28d0ef2ba87f6b48b245773e4/jdyyaac/555c/0559/5658/b609f00a8c232b10d8eea2ee3bdc7bc1.m4a"></audio>
-    <image src='src/assets/img/tangyuan.png' /><br>
-    <image src='src/assets/img/happy.jpg' />
-
-</body>
-<script>
-// 检测浏览器是否支持sw
-console.log('navigator', navigator)
-var SW = navigator.serviceWorker
-if(SW !== null) {
-  // 1.支持sw，可以进行注册缓存文件了
-  // 2.一般在onLoad时间中注册sw即可（减少性能损耗） 
-  // 3.sw是有作用域的，如果将注册路由改成'/test/sw.js'，sw之后只会监听 /test 下的所有fetch请求，
-  //   而不会去监听其他路径下的请求。
-  SW.register('sw.js')
-    .then(registion => {
-      console.log('支持sw：', registion.scope)
-    //   registion.update() // 手动更新
-    })
-    .catch(err => {
-      console.log('注册sw失败：', err)
-    })
-}
-
-if(SW.controller) {
-  console.log('send message::')
-  SW.controller.postMessage('koushuling')
-}
+    <title>Cloud Music</title>
+    <link rel="manifest" href="./manifest.json">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    // 检测浏览器是否支持sw
+    console.log('navigator', navigator)
+    var SW = navigator.serviceWorker
+    if(SW !== null) {
+      // 1.支持sw，可以进行注册缓存文件了
+      // 2.一般在onLoad时间中注册sw即可（减少性能损耗） 
+      // 3.sw是有作用域的，如果将注册路由改成'/test/sw.js'，sw之后只会监听 /test 下的所有fetch请求，
+      //   而不会去监听其他路径下的请求。
+      SW.register('sw.js')
+        .then(registion => {
+          console.log('支持sw：', registion.scope)
+        //   registion.update() // 手动更新
+        })
+        .catch(err => {
+          console.log('注册sw失败：', err)
+        })
+    }
+    
+    if(SW.controller) {
+      console.log('send message::')
+      SW.controller.postMessage('koushuling')
+    }
 </script>
 </html>
