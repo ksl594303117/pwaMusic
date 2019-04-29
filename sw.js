@@ -1,5 +1,5 @@
 importScripts( 'https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js' )
-var cacheStorageKey = 'minimal-pwa-1'
+var cacheStorageKey = 'minimal-pwa-2'
 // 定义需要缓存的路径以及需要缓存的静态文件的列表
 var bigCacheList = [
   '/',
@@ -83,6 +83,7 @@ self.addEventListener( 'activate', e => {
       return Promise.all(
         // 获取所有不同于当前版本名称cache下的内容,删除其他版本缓存的文件
         cachesNames.filter( cachesName => {
+          console.log( 'filter cachesName', cachesName )
           return cachesName !== cacheStorageKey
         } ).map( cachesName => {
           console.log( 'delete cachesName', cachesName )

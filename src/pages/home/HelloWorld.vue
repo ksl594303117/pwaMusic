@@ -28,40 +28,37 @@ export default {
     return {
       show_music: false,
       // 当前播放歌曲信息
-      current_music: {
-        id: '1002',
-        title: '我一定会爱上你',
-        author: '谢春花',
-        content: '一只白色的百灵鸟，翅膀上有风铃在摇晃',
-        url: 'https://m701.music.126.net/20190428174014/72be470263256b01c5a894defcbaa5e6/jdyyaac/555c/0559/5658/b609f00a8c232b10d8eea2ee3bdc7bc1.m4a'
-      },
+      current_music: {},
       // 歌单列表
       musicList: [{
         id: '1001',
-        title: '随便他们怎么说吧',
+        title: '随便他们怎么说吧11',
         author: '宗儒',
         content: '一只白色的百灵鸟，翅膀上有风铃在摇晃',
-        url: 'https://m10.music.126.net/20190428174319/08639fb15b5a5d1af95534b5cf30358a/ymusic/545b/0358/535c/c1677defab429fe5b53dd66b09ee8a4d.mp3'
+        url: '11111'
       }, {
         id: '1002',
         title: '我一定会爱上你',
         author: '谢春花',
         content: '一只白色的百灵鸟，翅膀上有风铃在摇晃',
-        url: 'https://m701.music.126.net/20190428174014/72be470263256b01c5a894defcbaa5e6/jdyyaac/555c/0559/5658/b609f00a8c232b10d8eea2ee3bdc7bc1.m4a'
+        url: '22222'
       }, {
         id: '1003',
         title: '才华有限公司',
         author: '金玟岐',
         content: '一只白色的百灵鸟，翅膀上有风铃在摇晃',
-        url: 'https://m701.music.126.net/20190428174424/6a3d63fd3ca440355f167d3610de811f/jdyyaac/055b/035c/030f/219e696b5146903930894ec9f25b701c.m4a'
+        url: '33333'
       }, {
         id: '1004',
         title: '追梦的蚂蚁',
         author: 'JAEFOREAL/蜡笔大Boom',
         content: '一只白色的百灵鸟，翅膀上有风铃在摇晃',
-        url: 'https://m801.music.126.net/20190428174632/78014dbab2488ae19ce488dcf78e6dd5/jdyyaac/000b/555b/065e/7a74b23616b17582ead714a7094b20f9.m4a'
+        url: '44444'
       }]
     }
+  },
+  mounted(){
+    this.current_music = this.musicList[0]
   },
   methods: {
     showList () {
