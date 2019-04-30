@@ -1,5 +1,5 @@
 importScripts( 'https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js' )
-var cacheStorageKey = 'minimal-pwa-0'
+var cacheStorageKey = 'minimal-pwa-1'
 // 定义需要缓存的路径以及需要缓存的静态文件的列表
 var bigCacheList = [
   '/',
@@ -10,7 +10,8 @@ var smallCacheList = [
   '/',
   'src/assets/img/icon.png',
   'src/assets/img/tangyuan.png',
-  'https://static.soyoung.com/sy-pre/playbar-1556417446881.png'
+  'https://static.soyoung.com/sy-pre/playbar-1556417446881.png',
+  'src/pages/home/home.vue',
 ]
 
 // 监听安装sw
