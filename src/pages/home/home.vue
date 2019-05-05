@@ -57,7 +57,7 @@ export default {
       }]
     }
   },
-  mounted(){
+  mounted () {
     this.current_music = this.musicList[0]
   },
   methods: {
