@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cloud Music</title>
-    <link rel="manifest" href="./manifest.json">
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
-  <script>
-    // 检测浏览器是否支持sw
+<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Cloud Music</title><link rel=manifest href=./manifest.json><link href=./pwaMusic/static/css/app.ba494b23ac851ac625dcfc8448e3fe59.css rel=stylesheet></head><body><div id=app>test111</div><script type=text/javascript src=./pwaMusic/static/js/manifest.02bcbb6bac9059d383ee.js></script><script type=text/javascript src=./pwaMusic/static/js/vendor.d5bde172b988351183eb.js></script><script type=text/javascript src=./pwaMusic/static/js/app.78bc2923e1cbffa09ab9.js></script></body><script>// 检测浏览器是否支持sw
     console.log('navigator', navigator)
     var SW = navigator.serviceWorker
     if(SW !== null) {
@@ -33,6 +19,4 @@
     if(SW.controller) {
       console.log('send message::')
       SW.controller.postMessage('koushuling')
-    }
-</script>
-</html>
+    }</script></html>
