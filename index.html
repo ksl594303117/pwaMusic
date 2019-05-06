@@ -1,22 +1,22 @@
-<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Cloud Music</title><link rel=manifest href=./manifest.json><link href=/static/css/app.ba494b23ac851ac625dcfc8448e3fe59.css rel=stylesheet></head><body><div id=app>gh-pages</div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.d5bde172b988351183eb.js></script><script type=text/javascript src=/static/js/app.78bc2923e1cbffa09ab9.js></script></body><script>// 检测浏览器是否支持sw
-    console.log('navigator', navigator)
-    var SW = navigator.serviceWorker
-    if(SW !== null) {
-      // 1.支持sw，可以进行注册缓存文件了
-      // 2.一般在onLoad时间中注册sw即可（减少性能损耗） 
-      // 3.sw是有作用域的，如果将注册路由改成'/test/sw.js'，sw之后只会监听 /test 下的所有fetch请求，
-      //   而不会去监听其他路径下的请求。
-      SW.register('sw.js')
-        .then(registion => {
-          console.log('支持sw：', registion.scope)
-        //   registion.update() // 手动更新
-        })
-        .catch(err => {
-          console.log('注册sw失败：', err)
-        })
-    }
-    
-    if(SW.controller) {
-      console.log('send message::')
-      SW.controller.postMessage('koushuling')
-    }</script></html>
+<!DOCTYPE html><html><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="ie=edge"><title>Cloud Music</title><link rel=manifest href=./manifest.json><link href=./pwaMusic/static/css/app.ba494b23ac851ac625dcfc8448e3fe59.css rel=stylesheet></head><body><div id=app>test111</div><script type=text/javascript src=./pwaMusic/static/js/manifest.02bcbb6bac9059d383ee.js></script><script type=text/javascript src=./pwaMusic/static/js/vendor.d5bde172b988351183eb.js></script><script type=text/javascript src=./pwaMusic/static/js/app.78bc2923e1cbffa09ab9.js></script></body><script>// 检测浏览器是否支持sw
+  console.log('navigator', navigator)
+  var SW = navigator.serviceWorker
+  if(SW !== null) {
+    // 1.支持sw，可以进行注册缓存文件了
+    // 2.一般在onLoad时间中注册sw即可（减少性能损耗） 
+    // 3.sw是有作用域的，如果将注册路由改成'/test/sw.js'，sw之后只会监听 /test 下的所有fetch请求，
+    //   而不会去监听其他路径下的请求。
+    SW.register('sw.js')
+      .then(registion => {
+        console.log('支持sw：', registion.scope)
+      //   registion.update() // 手动更新
+      })
+      .catch(err => {
+        console.log('注册sw失败：', err)
+      })
+  }
+  
+  if(SW.controller) {
+    console.log('send message::')
+    SW.controller.postMessage('koushuling')
+  }</script></html>
