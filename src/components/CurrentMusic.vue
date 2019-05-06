@@ -3,7 +3,7 @@
     <p class="title">{{data.title}}</p>
     <p class="author">{{data.author}}</p>
     <p class="content">{{data.content}}</p>
-    <audio :src='data.url' controls></audio>
+    <!-- <audio :src='data.url' controls></audio> -->
     <!-- 播放切换按钮 -->
     <div class="icon-bar">
       <span :class="left_icon_class"
